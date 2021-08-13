@@ -16,7 +16,7 @@ const Movies = () => {
           obj.name = e.name;
           obj.image = e.image.medium;
           obj.rating = e.rating.average;
-          obj.description = e.summary;
+          obj.description = e.summary.replace(/(<([^>]+)>)/gi, '');
           return obj;
         });
         setmovies(mov);
