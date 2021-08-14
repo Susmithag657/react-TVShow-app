@@ -6,7 +6,7 @@ const StarRating = ({ rating }) => {
   };
   const n1 = Math.trunc(rating / 2);
   const n2 = (rating / 2) * 10 - n1 * 10;
-  const n3 = Math.trunc(5 - (rating/2));
+  const n3 = Math.trunc(5 - rating / 2);
   return (
     <div>
       {[...Array(n1).keys()].map(e => {
@@ -14,9 +14,9 @@ const StarRating = ({ rating }) => {
       })}
 
       {n2 > 5 ? (
-        <i class="fas fa-star-half-alt" style={st1} />
+        <i className="fas fa-star-half-alt" style={st1} />
       ) : (
-        <i class="far fa-star" style={st1} />
+        <i className="far fa-star" style={st1} />
       )}
       {[...Array(n3).keys()].map(e => {
         return <i className="far fa-star" style={st1} />;

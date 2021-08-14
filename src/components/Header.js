@@ -5,9 +5,9 @@ const Header = () => {
   };
   return (
     <div>
-      <nav class="navbar navbar-light bg-primary">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1" style={st1}>
+      <nav className="navbar navbar-light bg-primary mb-5 p-3">
+        <div className="container-fluid">
+          <span className="navbar-brand mb-0 h1" style={st1}>
             TV Shows
           </span>
         </div>
